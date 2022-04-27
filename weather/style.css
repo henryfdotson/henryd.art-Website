@@ -1,0 +1,26 @@
+input.form-control.search-bar {
+    width: 20rem;
+    margin-right: 1rem;
+}
+.input-group.input-group-lg {
+    display: flex;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #057ee2 !important;
+}
+.jumbotron.weather {
+    padding: 4rem;
+    background-color: #d4eafb9e !important;
+    color: #ffffff;
+}
+.card {
+    border-radius: 10%;
+}
+
+.city {
+    font-weight: 400;
+}

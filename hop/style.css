@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D1C7B7 !important;
+}
+.game {
+	width: 500px;
+	height: 200px;
+	-webkit-box-shadow: 0px 6px 18px -3px rgba(0,0,0,0.51); 
+    box-shadow: 0px 6px 18px -3px rgba(0,0,0,0.51);
+    position: relative;
+    background-image: url('https://henryd.art/images/codethumbs/bunnybackground.png');
+    background-size: cover;
+}
+
+#character {
+    width:  50px;
+    height: 50px;
+    background-image: url('https://henryd.art/images/codethumbs/babybunny.png');
+    background-size: cover;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+.animate {
+    animation: jump 500ms;
+}
+@keyframes jump {
+    0%{top:  150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+#enemy {
+    width: 20px;
+    height: 20px;
+    background-image: url('https://henryd.art/images/codethumbs/beachball.png');
+    background-size: cover;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: enemy 1s infinite linear;
+}
+
+@keyframes enemy{
+    0%{left: 480px;}
+    100%{
+        left:0px;
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(-720deg); 
+    }
+
+}
+
+.logo {
+    position: absolute;
+    bottom: 5%;
+}
+
+div#counter {
+    color: white;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}

@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+canvas {
+	-webkit-box-shadow: -1px 4px 14px -5px rgba(0,0,0,0.77); 
+	box-shadow: -1px 4px 14px -5px rgba(0,0,0,0.77);
+	cursor: pointer;
+	/* width: 100%; */
+}
+
+.tools {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 15px;
+}
+
+input.color-picker {
+    display: inline-block;
+    align-self: center;
+    widows: 120px;
+    height: 38px;
+    border: 0px;
+}
+
+.form-range {
+	max-width: 15%;
+    display: inline-block;
+    align-self: center;
+}
+
+button {
+    margin: 2px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 10px;
+}
+
+.logo img {
+    width: 50px;
+}
+

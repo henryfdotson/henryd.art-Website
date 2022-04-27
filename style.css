@@ -1,0 +1,158 @@
+body {
+    background-color: #2e3440 !important;
+    color: white !important;
+}
+
+.panel,
+.jumbotron,
+.thumbnail,
+.nav>li>a:hover {
+    background-color: #3e4758 !important;
+}
+
+.collapse {
+    display: none;
+    visibility: visible !important;
+}
+
+.navbar-nav {
+    margin: 7.5px 0px !important;
+}
+
+a,
+.thumbnail .caption {
+    color: #e5e6e7 !important;
+}
+
+.main-container .homepage-image {
+	max-width: 20%;
+	border-radius: 2.25rem!important;
+}
+
+button.btn.btn-primary {
+    margin-top: 20px;
+}
+
+a:focus, a:hover {
+    text-decoration: none !important;
+}
+
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .0em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/*.model-container {
+    position: absolute;
+    height: 85%;
+    width: 85%;
+    background: #3e4758;
+}
+
+model-viewer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0px;
+}*/
+
+.product-3d-container model-viewer {
+    width: 75%;
+    height: 85rem;
+    margin: 0px auto;
+    background-color: #3e4758;
+}
+
+model-viewer {
+    margin: 0px auto;
+}
+
+td.quantity,
+.table-striped>tbody>tr:nth-of-type(odd)>td.quantity {
+    color: black !important;
+}
+
+input.add-to-cart,
+input[type="number"] {
+    color: black;
+}
+
+.paypal {
+    text-align: right;
+    padding-bottom: 40px;
+}
+.paypal button {
+    display: inline-block;
+    padding: 10px 20px 7px 20px;
+    background-color: #FFC439;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 215px;
+}
+.paypal button:hover {
+    background-color: #f3bb37;
+}
+
+footer {
+    color: #8fbdbb;
+}
+
+img.bioimage {
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
+
+.panel,
+.jumbotron,
+.thumbnail,
+.fade-in {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+     -o-animation: fadein 2s; /* Opera < 12.1 */
+        animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
